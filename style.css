@@ -1,26 +1,33 @@
-.link1 { grid-area: ggbc;}
-.link2 { grid-area: bz;}
-.link3 { grid-area: fp;}
-
-
 .grid-container {
     display: grid;
-    grid-template-areas:
-      'ggbc ggbc ggbc'
-      'bz bz bz'
-      'fp fp fp';
+    grid-template-areas: 'ggbc bz fp';
     gap: 20px;
-    background-color: #2196F3;
+    background-color: #c37373;
+    color: black;
+    border-radius: 25px;
     padding: 20px;
+    overflow: hidden;
   }
 
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 30px 0;
-    font-size: 30px;
+    font-size: 18px;
+    border-radius: 5px;
 }
+
 .grid-container > div:hover{
-    background-color: #2196F3;
-    
+  background-color: #c37373;
+  transform: scale(1.1);
+  transition: .25s;
+}
+
+.grid-container a:link {
+  color: black;
+  text-decoration: dotted;
+}
+
+.grid-container a:visited {
+  color: black;
 }
