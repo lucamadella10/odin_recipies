@@ -1,27 +1,26 @@
-body {
-    background-color: rgb(108, 106, 106);
-}
+.link1 { grid-area: ggbc;}
+.link2 { grid-area: bz;}
+.link3 { grid-area: fp;}
 
-p a:link {
-    text-decoration: none;
-    background-color: rgb(230, 147, 147);
-    color: rgb(255, 0, 0);
-    cursor: help;
-}
-p a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'ggbc ggbc ggbc'
+      'bz bz bz'
+      'fp fp fp';
+    gap: 20px;
+    background-color: #2196F3;
+    padding: 20px;
+  }
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    padding: 30px 0;
+    font-size: 30px;
 }
-p a:hover {
-    text-decoration: underline;
-    background-color: blue;
+.grid-container > div:hover{
+    background-color: #2196F3;
+    
 }
-p a:active {
-    text-decoration: underline;
-    background-color: green;
-}
-
